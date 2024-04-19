@@ -1,11 +1,12 @@
 import React from "react";
+import Hero_section from "../Components/Hero_section";
 
 
 const About=()=>{
 
     return(
         <>
-            <h1>Hello i am the About Page</h1>
+            <Hero_section heading = "Ecomm Store"/>
         </>
     )
 }
