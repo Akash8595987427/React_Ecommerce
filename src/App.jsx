@@ -9,6 +9,7 @@ import Category from "./Pages/Category";
 import SingleProduct from "./Pages/SingleProduct";
 import Cart from "./Pages/Cart";
 import ErrorPage from "./Pages/ErrorPage";
+import Navbar from "./Components/Navbar";
 
 
 
@@ -17,10 +18,11 @@ const App=()=>{
   return(
     <>
       <BrowserRouter>
+        <Navbar/>
         <Routes>
           <Route path="/" element={<Home/>}></Route>
           <Route path="/about" element={<About/>}></Route>
-          <Route path="/product" element={<Product/>}></Route>
+          <Route path="/products" element={<Product/>}></Route>
           <Route path="/contact" element={<Contact/>}></Route>
           <Route path="/category" element={<Category/>}></Route>
           <Route path="/singleproduct" element={<SingleProduct/>}></Route>
