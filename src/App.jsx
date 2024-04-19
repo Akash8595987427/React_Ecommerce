@@ -10,6 +10,7 @@ import SingleProduct from "./Pages/SingleProduct";
 import Cart from "./Pages/Cart";
 import ErrorPage from "./Pages/ErrorPage";
 import Navbar from "./Components/Navbar";
+import Mobile_navbar from "./Pages/Mobile_navbar";
 
 
 
@@ -28,6 +29,7 @@ const App=()=>{
           <Route path="/singleproduct" element={<SingleProduct/>}></Route>
           <Route path="/cart" element={<Cart/>}></Route>
           <Route path="*" element={<ErrorPage/>}></Route>
+          <Route path="/mobile_navbar" element={<Mobile_navbar/>}></Route>
         </Routes>
       </BrowserRouter>
     </>
