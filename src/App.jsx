@@ -11,6 +11,7 @@ import Cart from "./Pages/Cart";
 import ErrorPage from "./Pages/ErrorPage";
 import Navbar from "./Components/Navbar";
 import Mobile_navbar from "./Pages/Mobile_navbar";
+import Footer from "./Pages/Footer";
 
 
 
@@ -31,6 +32,7 @@ const App=()=>{
           <Route path="*" element={<ErrorPage/>}></Route>
           <Route path="/mobile_navbar" element={<Mobile_navbar/>}></Route>
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </>
   )

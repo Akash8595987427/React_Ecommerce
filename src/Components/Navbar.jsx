@@ -9,7 +9,7 @@ const Navbar=()=>{
     
     return(
         <>
-            <div className="navbar_section w-full h-[10vh] bg-slate-100 flex justify-center items-center">
+            <div className="navbar_section w-full h-[10vh] bg-sky-100 flex justify-center items-center">
                 <div className="container w-[90%] h-full flex justify-between items-center">
                     <h3 className="text-xl font-bold"><NavLink to="/"> Ecomm </NavLink></h3>
 

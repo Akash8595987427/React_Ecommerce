@@ -7,8 +7,8 @@ const Hero_section=(props)=>{
     return(
         <>
            <div className="hero_section w-full h-[90vh] flex justify-center items-center ">
-                <div className="container w-[90%] h-full grid grid-cols-1 py-6 px-12 xl:grid-cols-2">
-                    <div className="box1 w-full h-full flex flex-col justify-center items-start pl-32 pr-8 gap-0.5">
+                <div className="container w-[90%] h-full grid grid-cols-1 py-6 px-12 lg:grid-cols-2 lg:py-0 lg:px-0">
+                    <div className="box1 w-full h-full flex flex-col justify-center items-start pl-2 pr-2 gap-0.5  lg:pl-32 lg:pr-8">
                         <p className="uppercase text-xs">Welcome to </p>
                         <h1 className="text-3xl font-semibold"> {props.heading}</h1>
                         <p className="mt-4 text-xs ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sint, voluptates et dolor alias nihil quisquam libero mollitia nostrum ducimus?</p>
@@ -16,7 +16,7 @@ const Hero_section=(props)=>{
                     </div>
                     <div className="box2 w-full h-full flex justify-center items-center pl-10">
  
-                            <img src="../public/img/hero.jpg" alt="" className="w-[70%] h-auto " />
+                            <img src="/img/hero.jpg" alt="" className="w-[70%] h-auto hidden md:inline-block" />
                            
                         
                     </div>
