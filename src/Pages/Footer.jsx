@@ -19,14 +19,16 @@ const Footer=()=>{
             </div>
             <div className="container w-[70%] h-full grid grid-cols-4 gap-12 place-items-center my-12 ">
                 <div className="panel_1 w-full h-20 flex flex-col gap-2 justify-start items-start ">
-                    <p className="text-sm"> Technical </p>
+                    <p className="text-sm uppercase"> Ecomm Website </p>
                     <p className="text-xs"> Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
                 </div>
                 <div className="panel_2  w-full h-20 flex flex-col gap-2 justify-start items-start ">
                     <p className="text-sm">Subscriber to get important updates</p>
+                    <input type="text" placeholder="Email" className="px-4 w-[95%] py-1 rounded-md" />
+                    <button className="py-1 px-3 bg-purple-700 text-white mt-2">Subscribe</button>
                 </div>
                 <div className="panel_3  w-full h-20 flex flex-col gap-2 justify-start items-start ">
-                    <p className="text-sm"> Follow Us</p>
+                    <p className="text-sm uppercase"> Follow Us</p>
                     <div className="social w-full flex justify-start items-center gap-4 ">
                         <FaDiscord className="text-2xl" />
                         <FaInstagram className="text-2xl" />
@@ -34,7 +36,7 @@ const Footer=()=>{
                     </div>
                 </div>
                 <div className="panel_4 w-full h-20 flex flex-col gap-2 justify-start items-start ">
-                    <p className="text-sm">Call us</p> 
+                    <p className="text-sm uppercase">Call us</p> 
                     <p className="text-sm">+91 1234567890</p> 
                 </div>
             </div>
