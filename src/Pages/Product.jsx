@@ -14,7 +14,7 @@ const Product=(props)=>{
 
     return(
         <>
-        <NavLink to={`/singleproduct/${props.element.id}`}>
+        <NavLink to={`/singleproduct/${props.element.id}`} onClick={()=>{window.scrollTo(0, 0)}}>
             <div className="product_container container w-[80%] h-full flex flex-col justify-center items-start">
 
                 <img src={props.element.image} alt="img" className="w-full h-auto" />

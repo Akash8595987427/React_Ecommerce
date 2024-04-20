@@ -42,6 +42,7 @@ const AppProvider=({children})=>{
 
     useEffect(()=>{
         getApiData();
+        // getSingleProductData();
     }, [])
 
     return(

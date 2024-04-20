@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useGlobalContext } from "../Context/product_context";
 import { ImImage } from "react-icons/im";
+import PageNavigation from "../Components/PageNavigation";
 
 
 const Api = "https://api.pujakaitem.com/api/products";
@@ -20,24 +21,25 @@ const SingleProduct=(props)=>{
     console.log(singleProduct);
     return(
         <>
-            <div className="single_product_section w-full h-[100vh] flex justify-center items-center">
+            <PageNavigation title={singleProduct.name}/>
+            <div className="single_product_section w-full h-auto flex justify-center items-center my-[10vh]">
                 <div className="container w-[90%] h-full grid grid-cols-2 gap-8 ">
-                    <div className="box1 flex justify-end items-center">
+                    <div className="box1 w-full flex justify-end items-start">
                       
-                        {/* <img src={singleProduct.image[0].url} alt="" /> */}
-                        {/* <img src={singleProduct.image[1].url} alt="" /> */}
+                        {<img src={singleProduct.image} alt="" />}
+                        {/* <img src={singleProduct.image[1].url} alt=""  /> */}
                         {/* <img src={singleProduct.image[2].url} alt="" /> */}
                         {/* <img src={singleProduct.image[3].url} alt="" />   */}
                     </div>
-                    <div className="box2 flex flex-col justify-center items-start">
-                        <h1>{singleProduct.name}</h1>
-                        <p>MRP : {singleProduct.price}</p>
-                        <p>Deal of the Day : {singleProduct.price}</p>
-                        <p>{singleProduct.description}</p>
+                    <div className="box2 flex flex-col justify-start items-start gap-2 text-xs">
+                        <h1 className="text-2xl">{singleProduct.name}</h1>
+                        <p className=" font-semibold line-through">MRP : {(singleProduct.price / 100)+2500}</p>
+                        <p className=" text-blue-800">Deal of the Day : {singleProduct.price /100}</p>
+                        <p className=" text-gray-700">{singleProduct.description}</p>
                         <div></div>
-                        <p>Available : {(singleProduct.stock)?"In stock":"Out of Stock"} </p>
-                        <p>ID : {singleProduct.id}</p>
-                        <p>Brand : {singleProduct.company}</p>
+                        <p>Available : <span className="font-semibold">{(singleProduct.stock)?"In stock":"Out of Stock"} </span></p>
+                        <p>ID : <span className="font-semibold">{singleProduct.id} </span></p>
+                        <p>Brand : <span className="font-semibold">{singleProduct.company}</span> </p>
                         <hr className="w-full mt-3 border-1.5 border-black" />
                         <p>Color : </p>
                         <div></div>

@@ -9,7 +9,7 @@ const Footer=()=>{
 
     return(
         <>
-          <div className="footer_section w-full h-[40vh] bg-blue-950 text-white flex flex-col justify-center items-center relative">
+          <div className="footer_section w-full h-[40vh] bg-blue-950 text-white flex flex-col justify-center items-center relative mt-[24vh]">
             <div className="footer_section2 absolute w-[60%] h-[20vh] bg-slate-100 text-black -top-14 flex justify-around items-center rounded-md">
                 <div className="heading text-sm">
                     <h1>Ready to get started ?</h1>

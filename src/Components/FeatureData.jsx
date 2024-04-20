@@ -18,11 +18,12 @@ const FeatureData=()=>{
                 <p className="uppercase text-xs text-gray-400">Check Now</p>
                 <h1 className="uppercase text-2xl">Our Feature Services</h1>
                 
-                <div className="feature_container w-full h-full flex flex-row justify-center items-center gap-3">
+                <div className="feature_container w-full h-full flex flex-row justify-center items-center gap-3 bg-purple-700">
                     {
                         featureProduct.map((currElem)=>{
                             return(
                                 <Product key={currElem.id} index={currElem.id} element = {currElem}/>
+                                
                             )
                         })
                   
