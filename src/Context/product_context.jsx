@@ -8,6 +8,7 @@ const initialState = {
     isError : false,
     products : [],
     featureProduct : [],
+    singleProduct : {},
 }
 
 
@@ -26,7 +27,17 @@ const AppProvider=({children})=>{
             console.log(err);
             dispatch({type : "API_Error"})
         }
-    
+    }
+
+    const getSingleProductData=async(url)=>{
+        try{
+            const api_data = await fetch(url);
+            const singleProduct_Data = await api_data.json();
+            dispatch({type: "SET_SINGLE_PRODUCT", payload : singleProduct_Data})
+        }
+        catch(err){
+            console.log(err);
+        }
     }
 
     useEffect(()=>{
@@ -34,7 +45,7 @@ const AppProvider=({children})=>{
     }, [])
 
     return(
-        <AppContext.Provider value={{...state}}>
+        <AppContext.Provider value={{...state, getSingleProductData}}>
             {children}
         </AppContext.Provider>
     )

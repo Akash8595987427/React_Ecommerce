@@ -29,6 +29,12 @@ const reducer=(state, action)=>{
                 featureProduct : featureData,
             }
 
+        case "SET_SINGLE_PRODUCT" :
+            return{
+                ...state,
+                singleProduct : action.payload,
+            }
+
 
         default :
         return state;

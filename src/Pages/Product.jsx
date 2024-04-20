@@ -16,15 +16,15 @@ const Product=(props)=>{
         <>
         <NavLink to={`/singleproduct/${props.element.id}`}>
             <div className="product_container container w-[80%] h-full flex flex-col justify-center items-start">
+
                 <img src={props.element.image} alt="img" className="w-full h-auto" />
-                {console.log(props.element.image)}
+                {/* {console.log(props.element.image)} */}
                 <div className="w-full flex justify-between items-center text-sm ">
-                <h1 className="capitalize">{props.element.name}</h1> 
-                <h1 className="text-gray-500">{formatPrice(props.element.price)}</h1>
+                    <h1 className="capitalize">{props.element.name}</h1> 
+                    <h1 className="text-gray-500">{formatPrice(props.element.price)}</h1>
                 </div>
-                
             </div>
-            </NavLink>
+        </NavLink>
         </>
     )
 }

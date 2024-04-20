@@ -16,7 +16,7 @@ const Hero_section=(props)=>{
                     </div>
                     <div className="box2 w-full h-full flex justify-center items-center pl-10">
  
-                            <img src="/img/hero.jpg" alt="" className="w-[70%] h-auto hidden md:inline-block" />
+                            <img src="/img/hero.jpg" alt="" className="w-[100%] h-auto hidden md:inline-block" />
                            
                         
                     </div>
