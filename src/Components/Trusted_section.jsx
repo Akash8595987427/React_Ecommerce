@@ -13,7 +13,7 @@ const Trusted_section=()=>{
     return(
         <>
           <div className="trusted_section w-full h-[89vh] flex flex-col justify-center items-center my-16 md:h-auto">
-            <div className="feature_container container w-[80%] h-full grid grid-cols-1 place-items-center gap-8 px-12 lg:grid-cols-3 md:w-[100%]">
+            <div className="feature_container container w-[80%] h-full grid grid-cols-3 place-items-center gap-8">
                 <div className="box1 w-full h-48 bg-sky-100 flex flex-col justify-center items-center">
                     <TbTruckDelivery className="text-3xl text-purple-700"/> 
                     Super Fast and Free Delivery

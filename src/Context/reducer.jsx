@@ -20,7 +20,7 @@ const reducer=(state, action)=>{
         
         case "SET_API_DATA" :
             const featureData = action.payload.filter((curElem)=>{
-                return curElem.feature === true;
+                return curElem.featured === true;
             })
             return{
                 ...state,

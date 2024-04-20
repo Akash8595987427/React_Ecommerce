@@ -27,7 +27,7 @@ const App=()=>{
           <Route path="/products" element={<Product/>}></Route>
           <Route path="/contact" element={<Contact/>}></Route>
           <Route path="/category" element={<Category/>}></Route>
-          <Route path="/singleproduct" element={<SingleProduct/>}></Route>
+          <Route path="/singleproduct/:id" element={<SingleProduct/>}></Route>
           <Route path="/cart" element={<Cart/>}></Route>
           <Route path="*" element={<ErrorPage/>}></Route>
           <Route path="/mobile_navbar" element={<Mobile_navbar/>}></Route>
