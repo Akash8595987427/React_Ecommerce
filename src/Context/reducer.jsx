@@ -33,6 +33,7 @@ const reducer=(state, action)=>{
             return{
                 ...state,
                 singleProduct : action.payload,
+    
             }
 
 

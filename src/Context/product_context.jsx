@@ -34,6 +34,7 @@ const AppProvider=({children})=>{
             const api_data = await fetch(url);
             const singleProduct_Data = await api_data.json();
             dispatch({type: "SET_SINGLE_PRODUCT", payload : singleProduct_Data})
+
         }
         catch(err){
             console.log(err);
@@ -42,7 +43,6 @@ const AppProvider=({children})=>{
 
     useEffect(()=>{
         getApiData();
-        // getSingleProductData();
     }, [])
 
     return(

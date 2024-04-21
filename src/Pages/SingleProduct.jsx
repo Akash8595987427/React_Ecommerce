@@ -7,29 +7,47 @@ import PageNavigation from "../Components/PageNavigation";
 
 const Api = "https://api.pujakaitem.com/api/products";
 
+
 const SingleProduct=(props)=>{
     const {id} = useParams();
     const {singleProduct, getSingleProductData} = useGlobalContext();
-    
+
+//*  This the method to remove the dynamic image error 
+     if(singleProduct.image == null){
+        singleProduct.image = [{url : " "}];
+    }
+
+
     useEffect(()=>{
         getSingleProductData(`${Api}?id=${id}`)
         console.log(`${Api}?id=${id}`);
     }, [])
 
+    
 
 
     console.log(singleProduct);
     return(
+       
         <>
             <PageNavigation title={singleProduct.name}/>
             <div className="single_product_section w-full h-auto flex justify-center items-center my-[10vh]">
                 <div className="container w-[90%] h-full grid grid-cols-2 gap-8 ">
                     <div className="box1 w-full flex justify-end items-start">
+                        
+
+                    {
+                        singleProduct.image.map((currElem, index)=>{
+                            return(
+                                <>
+                                <img src={currElem.url} index={currElem.id} alt="" /> 
+                                {console.log(currElem)}
+                                </>
+                            ) 
+                        })
+                    }
                       
-                        {<img src={singleProduct.image} alt="" />}
-                        {/* <img src={singleProduct.image[1].url} alt=""  /> */}
-                        {/* <img src={singleProduct.image[2].url} alt="" /> */}
-                        {/* <img src={singleProduct.image[3].url} alt="" />   */}
+                    
                     </div>
                     <div className="box2 flex flex-col justify-start items-start gap-2 text-xs">
                         <h1 className="text-2xl">{singleProduct.name}</h1>
