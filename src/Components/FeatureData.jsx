@@ -18,7 +18,7 @@ const FeatureData=()=>{
                 <p className="uppercase text-xs text-gray-400">Check Now</p>
                 <h1 className="uppercase text-2xl">Our Feature Services</h1>
                 
-                <div className="feature_container w-full h-full flex flex-row justify-center items-center gap-3">
+                <div className="feature_container w-full h-full flex flex-row justify-center items-center gap-3 max-lg:flex-col max-lg:w-[70%]">
                     {
                         featureProduct.map((currElem)=>{
                             return(

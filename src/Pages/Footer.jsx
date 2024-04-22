@@ -22,10 +22,10 @@ const Footer=()=>{
                     <p className="text-sm uppercase"> Ecomm Website </p>
                     <p className="text-xs"> Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
                 </div>
-                <div className="panel_2  w-full h-20 flex flex-col gap-2 justify-start items-start ">
+                <div className="panel_2  w-full h-20 flex flex-col gap-2 justify-start items-start text-white">
                     <p className="text-sm">Subscriber to get important updates</p>
-                    <input type="text" placeholder="Email" className="px-4 w-[95%] py-1 rounded-md" />
-                    <button className="py-1 px-3 bg-purple-700 text-white mt-2">Subscribe</button>
+                    <input type="text" placeholder="Email" className="px-4 w-[95%] py-1 rounded-md text-black" />
+                    <button className="py-1 px-3 bg-purple-700  mt-2">Subscribe</button>
                 </div>
                 <div className="panel_3  w-full h-20 flex flex-col gap-2 justify-start items-start ">
                     <p className="text-sm uppercase"> Follow Us</p>
